@@ -29,7 +29,8 @@ body {
 
 .body {
 	background: linear-gradient(#81b622, #ebfbcb);
-	height: 1000000px;
+	/* height: 1000000px; */
+	/* overflow-x: hidden; */
 }
 
 .menu-bar {
@@ -103,9 +104,9 @@ body {
 }
 
 .intro {
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat;
 	background-size: cover;
-	background: linear-gradient(rgba(129, 182, 34, 0.5), rgba(235, 251, 203, 0.5));
+	background: linear-gradient(rgba(129, 182, 34, 0.5), rgba(235, 251, 203, 0.5)); */
 	height: 100vh;
 	z-index: 1;
 	position: absolute;
@@ -113,17 +114,40 @@ body {
 	left: 0;
 	right: 0;
 	position: relative;
+	align-items: center;
+	justify-content: center;
 }
 
 .intro-text {
-	padding-top: 200px;
+	right: 0;
+	left: 0;
+	position: absolute;
+	padding-top: 400px;
 	text-align: center;
 	font-size: 60px;
 	font-weight: 400;
 	font-family: "Lulo Clean W01 One Bold";
-	color: #D2E3C8;
+	color: white;
+	z-index: 2;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, .8);
+}
+
+.intro img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	pointer-events: none;
 }
 
 main {
-	background: url("../images/jungle.jpg") top center/cover no-repeat fixed;
+	/* background: url("../images/jungle.jpg") top center/cover no-repeat fixed; */
+}
+
+.products{
+	background-color: #81b622;
+	margin-top: 100px;
+	position: relative;
+	z-index: 3;
+	height: 200px;
 }
