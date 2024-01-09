@@ -1,119 +1,129 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	height: 5000px;
 }
 
 @font-face {
-    font-family: "Playlist-Script";
-    src: url("https://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot");
-    src: url("https://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.svg#Playlist-Script")format("svg");
+    font-family: "Lulo Clean W01 One Bold";
+    src: url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.eot");
+    src: url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.svg#Lulo Clean W01 One Bold")format("svg");
 }
 
 @font-face {
-    font-family: "Conduit ITC W05 Bold";
-    src: url("https://db.onlinewebfonts.com/t/098bf308392312710511d7cf99726764.eot");
-    src: url("https://db.onlinewebfonts.com/t/098bf308392312710511d7cf99726764.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/098bf308392312710511d7cf99726764.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/098bf308392312710511d7cf99726764.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/098bf308392312710511d7cf99726764.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/098bf308392312710511d7cf99726764.svg#Conduit ITC W05 Bold")format("svg");
+    font-family: "Lulo Clean W01 One";
+    src: url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.eot");
+    src: url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/116d187134420de5733c7c45bbc80c46.svg#Lulo Clean W01 One")format("svg");
 }
 
-.body{
-    background:linear-gradient(#81b622,#ebfbcb) ;
-    height: 1000000px;
+.body {
+	background: linear-gradient(#81b622, #ebfbcb);
+	height: 1000000px;
 }
 
-.menu-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #ebfbcb;
-    padding-top: 20px;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-bottom: 10px;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
+.menu-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #ebfbcb;
+	padding-top: 20px;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	align-items: center;
+	position: fixed;
+	/* left: 0;
+	right: 0;
+	top: 0; */
+	width: 100%;
+	z-index: 2;
 }
 
-.menu-left{
-    display: flex;
-    justify-content: space-between;
-    width: 23%;
+.menu-left {
+	display: flex;
+	justify-content: space-between;
+	width: 23%;
 }
 
-.menu-left img{
-    width: 200px;
-    height: 60px;
+.menu-left img {
+	width: 200px;
+	height: 60px;
 }
 
-
-.menu-left a{
-    all: unset;
-    font-size:24px;
-    text-decoration: none;
-    font-weight: 600;
-    font-family: 'Playlist-Script';
+.menu-left a {
+	all: unset;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: 600;
+	font-family: "Lulo Clean W01 One";
 }
 
-.menu-left a:hover{
-    cursor: pointer;
-    opacity: 0.6;
+.menu-left a:hover {
+	cursor: pointer;
+	opacity: 0.6;
 }
 
-
-.menu-middle{
-    display: flex;
-    justify-content: space-between;
-    width: 170px;
+.menu-middle {
+	display: flex;
+	justify-content: space-between;
+	width: 170px;
 }
 
-.menu-right{
-    margin-right: 20px;
-    font-size: 24px;
-    width: 4%;
-    display: flex;
+.menu-right {
+	margin-right: 20px;
+	font-size: 24px;
+	width: 4%;
+	display: flex;
 }
 
-.menu-right a{
-    all: unset;
-    text-decoration: none;
-    font-weight: 600;
-    font-family: 'Playlist-Script';
-    line-height: 100px;
-    padding-bottom: 15px;
+.menu-right a {
+	all: unset;
+	text-decoration: none;
+	font-weight: 600;
+	font-family: "Lulo Clean W01 One";
+	line-height: 100px;
+	padding-bottom: 15px;
+	font-size: 14px;
 }
 
-.menu-right a:hover{
-    cursor: pointer;
-    opacity: 0.6;
+.menu-right a:hover {
+	cursor: pointer;
+	opacity: 0.6;
 }
 
-.intro{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background:linear-gradient(#81b622,#ebfbcb) ;
-    height: 100vh;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    position: relative;
+.intro {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: linear-gradient(rgba(129, 182, 34, 0.5), rgba(235, 251, 203, 0.5));
+	height: 100vh;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: relative;
 }
 
-.intro-text{
-    padding-top: 200px;
-    text-align: center;
-    font-size: 100px;
-    font-weight: 400;
-    font-family: 'Playlist-Script';
+.intro-text {
+	padding-top: 200px;
+	text-align: center;
+	font-size: 60px;
+	font-weight: 400;
+	font-family: "Lulo Clean W01 One Bold";
+	color: #D2E3C8;
+}
+
+main {
+	background: url("../images/jungle.jpg") top center/cover no-repeat fixed;
 }
